@@ -101,6 +101,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 		Novice::DrawLine(int(start.x), int(start.y), int(end.x), int(end.y), color);
 		DrawTriangle(triangle, worldViewProjectionMatrix, viewportMatrix, WHITE);
 
+		//デバッグ
 		ImGui::Begin("window");
 		ImGui::DragFloat3("CameraTranslate", &translate.x, 0.01f);
 		ImGui::DragFloat3("CameraRotate", &cameraRotate.x, 0.01f);
